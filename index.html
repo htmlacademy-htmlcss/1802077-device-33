@@ -4,15 +4,17 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <header class="page-header">
     <h1 class="visually-hidden">Device</h1>
     <img class="logo" src="" alt="Device">
-    <form action="#" method="get">
+    <form action="https://echo.htmlacademy.ru/" method="get">
+      <label class="visually hidden" id="text-search-field">Поле поиска</label>
       <input type="text" name="text-search" id="text-search-field" placeholder="Текст поиска">
-      <input type="submit" value="Найти">
+      <button>Найти</button>
     </form>
 
     <nav class="navigation">
@@ -29,7 +31,7 @@
       </ul>
       <ul class="navigation-services">
         <li class="navigation-item">
-          <a class="navigation-link" href="device-2.html">Каталог товаров</a>
+          <a class="navigation-link" href="catalog.html">Каталог товаров</a>
         </li>
         <li><a class="button button-all" href="#">Посмотреть все</a>
         </li>
@@ -68,12 +70,10 @@
       <ul class="feature-list">
         <li class="feature">
           <span class="feature-value">800м</span>
-          <br>
           <span class="feature-name">Дальность полёта</span>
         </li>
         <li class="feature">
           <span class="feature-value">50м</span>
-          <br>
           <span class="feature-name">Радиус поражения</span>
         </li>
       </ul>
@@ -82,12 +82,14 @@
 
 
   <main class="page-main">
-    <img class="icon" src="" alt="Виртуальная реальность">
-    <img class="icon" src="" alt="Моноподы для селфи">
-    <img class="icon" src="" alt="Экшн-камеры">
-    <img class="icon" src="" alt="Фитнес-браслеты">
-    <img class="icon" src="" alt="Умные часы">
-    <img class="icon" src="" alt="ВКвадрокоптеры">
+
+    <span class='text-with-icon item-1'>Виртуальная реальность</span>
+    <span class='text-with-icon item-2'>Моноподы для селфи</span>
+    <span class='text-with-icon item-3'>Экшн-камеры</span>
+    <span class='text-with-icon item-4'>Фитнес-браслеты</span>
+    <span class='text-with-icon item-5'>Умные часы</span>
+    <span class='text-with-icon item-6'>Квадрокоптеры</span>
+
 
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
@@ -109,18 +111,15 @@
           мы неплохо заработаем, поднимая его на ваш этаж.</p>
       </section>
     </section>
+
     <p>Доставим редкий товар под заказ</p>
 
     <section class="about us">
       <h2 class="about us-title">О нас</h2>
-      <ul class="about us-list">
-        <li class="about us-item">
           <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
           </p>
-        </li>
-        <li class="about us-item">
           <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
-        </li>
+     <ul class="about us-list">
         <li class="about us-company name-item">
           <p>Меловые линии</p>
         </li>
@@ -147,7 +146,85 @@
       <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
     </ul>
     <a class="button button-feedbacks" href="#">Напишите нам</a>
+
+    <section class="newsletter">
+      <h2 class="page-footer-title">Подпишитесь
+        на рассылку</h2>
+        <p>Еженедельный дайджест с обзорами новинок,
+          длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+
+      <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+
+        <label for="newsletter-email">Ваш e-mail</label>
+        <input class="field"  placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
+
+        <button class="button newsletter-button" type="submit">
+          <span class="visually-hidden">Подписаться </span>
+        </button>
+
+      </form>
+    </section>
+
+    <section class="modal-content">
+      <h2 class="content-title">Доставка под заказ</h2>
+      <label for="user-field-id">Ваше имя:</label>
+      <input id="user-field-id" type="text" name="username">
+      <label for="email-field-id">Ваш e-mail:</label>
+      <input id="email-field-id" type="text" name="email">
+      <label for="item-field-id">Что нужно привезти:</label>
+      <input id="item-field-id" type="text" name="item">
+      <input type="submit" value="Отправить">
+    </section>
+
+    </section>
   </main>
+  <footer class="page-footer">
+    <section class="footer-contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <img class="footer-contacts-logo" src="" alt="Device">
+      <address class="footer-contacts-address">
+        <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+      </address>
+      <nav class="navigation">
+        <ul class="navigation-user">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Доставка</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Гарантия</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
+    </section>
+
+    <section class="footer-social">
+      <h2 class="visually-hidden">Социальные сети</h2>
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a class="button" href="#">
+            <span class="visually-hidden">Фэйсбук</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="button" href="#">
+            <span class="visually-hidden">Инстаграм</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="button" href="#">
+            <span class="visually-hidden">Твиттер</span>
+          </a>
+        </li>
+      </ul>
+      <p class="about-text">
+        <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
+      </p>
+
+  </footer>
 </body>
 
 </html>
