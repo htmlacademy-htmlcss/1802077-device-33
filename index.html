@@ -10,9 +10,10 @@
 <body>
   <header class="page-header">
     <h1 class="visually-hidden">Device</h1>
-    <img class="logo" src="" alt="Device">
+    <img class="logo" src="#" alt="Device">
+
     <form action="https://echo.htmlacademy.ru/" method="get">
-      <label class="visually hidden" id="text-search-field">Поле поиска</label>
+      <label class="visually hidden" for="text-search-field">Поле поиска</label>
       <input type="text" name="text-search" id="text-search-field" placeholder="Текст поиска">
       <button>Найти</button>
     </form>
@@ -28,6 +29,7 @@
         <li class="navigation-item">
           <a class="navigation-link" href="#">Корзина</a>
         </li>
+
       </ul>
       <ul class="navigation-services">
         <li class="navigation-item">
@@ -47,9 +49,9 @@
       </ul>
     </nav>
 
-    <section class="gallery">
-      <h2 class="visually hidden">Галерея</h2>
-      <img class="slider-image" src="" alt="Товары">
+    <section class="image">
+      <h2 class="visually hidden">Изображение</h2>
+      <img class="slider-image" src="#" alt="Товары">
       <button class="slider-button slider-prev" type="button">
         <span class="visually-hidden">Предыдущее фото</span>
       </button>
@@ -82,14 +84,14 @@
 
 
   <main class="page-main">
-
+<section class="gallery">
     <span class='text-with-icon item-1'>Виртуальная реальность</span>
     <span class='text-with-icon item-2'>Моноподы для селфи</span>
     <span class='text-with-icon item-3'>Экшн-камеры</span>
     <span class='text-with-icon item-4'>Фитнес-браслеты</span>
     <span class='text-with-icon item-5'>Умные часы</span>
     <span class='text-with-icon item-6'>Квадрокоптеры</span>
-
+</section>
 
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
@@ -112,14 +114,16 @@
       </section>
     </section>
 
+
     <p>Доставим редкий товар под заказ</p>
+
 
     <section class="about us">
       <h2 class="about us-title">О нас</h2>
-          <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
-          </p>
-          <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
-     <ul class="about us-list">
+      <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+      </p>
+      <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+      <ul class="about us-list">
         <li class="about us-company name-item">
           <p>Меловые линии</p>
         </li>
@@ -132,14 +136,17 @@
       </ul>
       <a class="button button-about us" href="#">Подробнее о нас</a>
     </section>
+
     <h2 class="contacts-title">Контакты</h2>
     <p>Вы можете забрать товар сами, заехав в наш офис.
       Заодно сможете проверить работоспособность покупки.</p>
     <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
+
     <address class="contacts-address">
       <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
       <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
     </address>
+
     <h3 class="contacts-subtitle">Время работы</h3>
     <ul class="contacts-schedule">
       <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
@@ -147,41 +154,49 @@
     </ul>
     <a class="button button-feedbacks" href="#">Напишите нам</a>
 
-    <section class="newsletter">
-      <h2 class="page-footer-title">Подпишитесь
-        на рассылку</h2>
-        <p>Еженедельный дайджест с обзорами новинок,
-          длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+    <section class="modal-content">
+      <h2 class="content-title">Доставка под заказ</h2>
+
+      <form action="https://echo.htmlacademy.ru/" method="get">
+        <label for="user-field">Ваше имя:</label>
+        <input id="user-field" type="text" name="username">
+
+        <label for="email-field">Ваш e-mail:</label>
+        <input id="email-field" type="text" name="email">
+
+        <label for="item-field">Что нужно привезти:</label>
+        <input id="item-field" type="text" name="item">
+
+        <label for="quantity-field">Количество</label>
+        <button type="button">-</button>
+        <input id="quantity-field" type="text" name="quantity">
+        <button type="button">+</button>
+
+        <button>Отправить</button>
+      </form>
+    </section>
+  </main>
+
+
+  <footer class="page-footer">
+
+    <section class="footer-newsletter">
+      <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+
+      <p>Еженедельный дайджест с обзорами новинок,
+        длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
 
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-
         <label for="newsletter-email">Ваш e-mail</label>
-        <input class="field"  placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
-
-        <button class="button newsletter-button" type="submit">
-          <span class="visually-hidden">Подписаться </span>
-        </button>
-
+        <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email"
+          required>
+        <button class="button newsletter-button" type="submit">Подписаться</button>
       </form>
     </section>
 
-    <section class="modal-content">
-      <h2 class="content-title">Доставка под заказ</h2>
-      <label for="user-field-id">Ваше имя:</label>
-      <input id="user-field-id" type="text" name="username">
-      <label for="email-field-id">Ваш e-mail:</label>
-      <input id="email-field-id" type="text" name="email">
-      <label for="item-field-id">Что нужно привезти:</label>
-      <input id="item-field-id" type="text" name="item">
-      <input type="submit" value="Отправить">
-    </section>
-
-    </section>
-  </main>
-  <footer class="page-footer">
     <section class="footer-contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <img class="footer-contacts-logo" src="" alt="Device">
+      <img class="footer-contacts-logo" src="#" alt="Device">
       <address class="footer-contacts-address">
         <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
       </address>
@@ -223,7 +238,7 @@
       <p class="about-text">
         <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
       </p>
-
+    </section>
   </footer>
 </body>
 
