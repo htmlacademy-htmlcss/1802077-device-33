@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <title>Каталог</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
+
 <body>
   <header class="page-header">
     <h1 class="visually-hidden">Переход на главную</h1>
     <a href='index.html'><img class="logo" src="images/logo/logo3.svg" width="145" height="36" alt="Device"></a>
+
     <form action="https://echo.htmlacademy.ru/" method="get">
       <label class="visually hidden" for="text-search-field">Поле поиска</label>
       <input type="text" name="text-search" id="text-search-field" placeholder="Текст поиска">
       <button type="submit">Найти</button>
     </form>
+
     <nav class="navigation">
-      <ul class="navigation user">
+      <ul class="navigation-list">
         <li class="navigation-item">
           <a class="navigation-link" href="#">Коля Петухов</a>
         </li>
@@ -28,11 +33,10 @@
           <a class="navigation-link" href="#">Корзина</a>
         </li>
       </ul>
+
       <ul class="navigation-services">
         <li class="navigation-item">
           <a class="navigation-link" href="#">Каталог товаров</a>
-        </li>
-        <li><a class="button button-all" href="#">Посмотреть все</a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">Доставка</a>
@@ -46,6 +50,7 @@
       </ul>
     </nav>
   </header>
+
   <main class="main-inner">
     <header class="inner-header">
       <h2 class="inner-header-title">Моноподы для селфи</h2>
@@ -57,12 +62,13 @@
           <a class="breadcrumbs-link">Каталог товаров</a>
         </li>
         <li>
-          <a class="navigation-link navigation-link-current" href="#">Моноподы для селфи</a>
+          <a class="breadcrumbs-link">Моноподы для селфи</a>
         </li>
       </ul>
     </header>
+
     <section class="filter-products">
-      <h2 class="filter-products-title">Фильтр:</h2>
+      <h3 class="filter-products-title">Фильтр:</h3>
       <form class="catalog filter" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Цвет</legend>
@@ -118,12 +124,16 @@
         </fieldset>
         <button class="button" type="submit">Показать</button>
       </form>
-      <p>Сортировка</p>
+
+      <h3 class="filter-products-title">Сортировка</h3>
       <select class="select-control" name="sorting">
         <option value="popular">Сначала популярные</option>
         <option value="cheap">Сначала дешёвые</option>
         <option value="expensive" selected>Сначала дорогие</option>
       </select>
+
+
+
       <ul class="product-list">
         <li class="product-img">
           <a class="product-img-link" href="product.html">
@@ -188,28 +198,29 @@
         </li>
       </ul>
     </section>
+
   </main>
   <footer class="page-footer">
     <section class="footer-contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <a href='index.html'><img class="logo" src="images/logo/logo3.svg" width="145" height="36" alt="Device"></a>
       <address class="footer-contacts-address">
-        <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+        <p class="address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
       </address>
       <nav class="navigation">
         <ul class="navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Доставка</a>
+            <a class="navigation-link-footer" href="#">Доставка</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Гарантия</a>
+            <a class="navigation-link-footer" href="#">Гарантия</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Контакты</a>
+            <a class="navigation-link-footer" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
-      <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
+      <a class="contacts-phone-footer" href="tel:88128121212">+7 (812) 812-12-12</a>
     </section>
     <section class="footer-social">
       <h2 class="visually-hidden">Социальные сети</h2>
@@ -236,4 +247,5 @@
     </section>
   </footer>
 </body>
+
 </html>
