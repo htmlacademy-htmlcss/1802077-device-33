@@ -38,44 +38,58 @@ body {
   background-color: #ffffff;
 }
 
-/* header.page-header form input[placeholder] {
-  font-family: rubik, sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: #000000;
-} */
-
-.navigation-list {
-  font-family: rubik, sans-serif;
-  line-height: 30px;
-  font-weight: 400;
-  text-align: left;
-  vertical-align: middle;
+a {
   text-decoration: none;
+  color: #000000;
 }
 
-.navigation-services {
-  text-align: left;
-  vertical-align: top;
+.button {
+  font-family: raleway;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 800;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
   text-transform: uppercase;
 }
 
-.navigation-link {
-  text-decoration: none;
+.page-header {
+  background-color: #ffe17f;
+}
+::placeholder {
+  font-family: rubik, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
   color: #000000;
+  text-align: center;
 }
 
-.description-image-head {
+.navigation-user {
+  font-family: rubik, sans-serif;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+}
+
+.navigation-services {
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+.description-image-title {
   font-size: 50px;
   line-height: 50px;
 }
 
-p {
+.description-image-img {
   font-family: rubik, sans-serif;
   font-weight: 400;
   line-height: 30px;
   color: #444444;
-  text-decoration: none;
 }
 
 .feature-value {
@@ -92,29 +106,63 @@ p {
   line-height: 30px;
 }
 
-.product-link {
+.catalog-categories-link {
   line-height: 24px;
   color: #000000;
-  text-decoration: none;
 }
 
-h2 {
+.advantages {
+  background-color: #f0f0f0;
+}
+
+.name-services {
   font-size: 50px;
   line-height: 50px;
 }
 
-.delivery-of-goods {
-  font-size: 20px;
-  line-height: 23px;
+.description-advantages-services {
+  font-family: rubik, sans-serif;
+  font-weight: 400;
+  line-height: 30px;
+  color: #444444;
 }
 
-.about-us-company-name-item p {
+.delivery-rare {
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #f0f0f0;
+}
+
+.about-us-title {
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.about-us-content {
+  font-family: rubik, sans-serif;
+  font-weight: 400;
+  line-height: 30px;
+  color: #444444;
+}
+
+.about-us-company-name-item + p {
   font-family: rubik, sans-serif;
   font-weight: 700;
-  font-size: 18px;
   line-height: 20px;
-  text-align: left;
-  vertical-align: top;
+}
+
+.contacts-title {
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.contacts-title + p {
+  font-family: rubik, sans-serif;
+  font-weight: 400;
+  line-height: 30px;
+  color: #444444;
 }
 
 .contacts-subtitle {
@@ -122,32 +170,62 @@ h2 {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-  text-align: left;
-  vertical-align: top;
   color: #444444;
 }
 
-.page-footer {
+.contacts-address-text {
+  font-family: rubik, sans-serif;
+  font-weight: 400;
+  line-height: 30px;
+  color: #444444;
+}
+
+.contacts-phone {
+  font-family: rubik, sans-serif;
+  font-weight: 400;
+  line-height: 30px;
+  color: #444444;
+  text-decoration-line: underline;
+}
+
+.contacts-schedule-item {
+  font-family: rubik, sans-serif;
+  font-weight: 400;
+  line-height: 30px;
+  color: #444444;
+}
+
+.newsletter {
   background-color: #f0f0f0;
 }
 
-.footer-contacts {
-  background-color: #444444;
-  color: #ffffff;
+.newsletter-title {
+  font-size: 50px;
+  line-height: 50px;
 }
 
-address-text {
+.newsletter-title + p {
+  font-family: rubik, sans-serif;
+  font-weight: 400;
+  line-height: 30px;
+  color: #444444;
+}
+
+footer {
+  background-color: #444444;
+}
+
+.footer-contacts-address {
   font-family: rubik, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  text-decoration: none;
+  color: #ffffff;
 }
 
 .navigation-link-footer {
-  color: #ffffff;
-  text-decoration: none;
   text-transform: uppercase;
+  color: #ffffff;
 }
 
 .contacts-phone-footer {
@@ -158,41 +236,96 @@ address-text {
   color: #ffffff;
   text-decoration-line: underline;
 }
-.contacts-phone {
-  font-family: rubik, sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
-  color: #444444;
-  text-decoration-line: underline;
-}
-.footer-social {
-  background-color: #444444;
-  color: #ffffff;
+
+.inner-header-title {
+  font-size: 50px;
+  line-height: 50px;
 }
 
-.breadcrumbs {
+.breadcrumbs-link {
+  font-family: rubik, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.color-filter {
+  background-color: #f0f0f0;
+}
+
+.filter-products-title {
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.catalog-filter-title {
+  font-family: rubik, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.color-input {
   font-family: rubik, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
 }
 
-.breadcrumbs-link {
-  text-decoration: none;
-  color: #000000;
+.status-input {
+  font-family: rubik, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
 }
 
-.filter-products-title {
-  font-size: 16px;
-  list-style: 19px;
-  text-transform: uppercase;
+.select-control {
+  font-family: rubik, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .product-img-title {
   font-family: rubik, sans-serif;
   font-weight: 700;
+  font-size: 18px;
   line-height: 20px;
-  text-decoration: none;
   color: #000000;
+}
+
+.product-img-price {
+  font-family: rubik, sans-serif;
+  font-weight: 400;
+  color: #444444;
+  text-align: right;
+}
+
+.pagination-link {
+  font-family: rubik, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
+  text-align: center;
+}
+
+.pagination-forward-back {
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.modal-content {
+  font-family: rubik, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.content-title {
+  font-size: 50px;
+  line-height: 50px;
 }
