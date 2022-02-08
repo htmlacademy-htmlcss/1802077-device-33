@@ -1,5 +1,5 @@
 @font-face {
-  font-family: rubik;
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
   src: url(".../fonts/rubik/rubik-400.woff2") format(woff2);
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: rubik;
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 700;
   src: url(".../fonts/rubik/rubik-700.woff2") format(woff2);
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  font-family: rubik;
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 800;
   src: url(".../fonts/rubik/rubik-800.woff2") format(woff2);
@@ -23,7 +23,7 @@
 }
 
 @font-face {
-  font-family: raleway;
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
   src: url(".../fonts/raleway/raleway-800.woff2") format(woff2);
@@ -31,11 +31,12 @@
 }
 
 body {
-  font-family: raleway, sans-serif;
+  font-family: "Raleway", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
   background-color: #ffffff;
+  margin: 0;
 }
 
 a {
@@ -44,7 +45,7 @@ a {
 }
 
 .button {
-  font-family: raleway;
+  font-family: "Raleway", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
   font-weight: 800;
@@ -57,8 +58,8 @@ a {
 .page-header {
   background-color: #ffe17f;
 }
-::placeholder {
-  font-family: rubik, sans-serif;
+.search {
+  font-family: "Rubik", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -67,7 +68,7 @@ a {
 }
 
 .navigation-user {
-  font-family: rubik, sans-serif;
+  font-family: "Rubik", "Arial", sans-serif;
   font-weight: 400;
   line-height: 30px;
   text-align: center;
@@ -79,28 +80,27 @@ a {
   text-align: center;
 }
 
-
 .description-image-title {
   font-size: 50px;
   line-height: 50px;
 }
 
 .description-image-img {
-  font-family: rubik, sans-serif;
+  font-family: "Rubik", "Arial", sans-serif;
   font-weight: 400;
   line-height: 30px;
   color: #444444;
 }
 
 .feature-value {
-  font-family: rubik, sans-serif;
+  font-family: "Rubik", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 30px;
 }
 
 .feature-name {
-  font-family: rubik, sans-serif;
+  font-family: "Rubik", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
@@ -121,7 +121,7 @@ a {
 }
 
 .description-advantages-services {
-  font-family: rubik, sans-serif;
+  font-family: "Rubik", "Arial", sans-serif;
   font-weight: 400;
   line-height: 30px;
   color: #444444;
@@ -141,14 +141,14 @@ a {
 }
 
 .about-us-content {
-  font-family: rubik, sans-serif;
+  font-family: "Rubik", "Arial", sans-serif;
   font-weight: 400;
   line-height: 30px;
   color: #444444;
 }
 
 .about-us-company-name-item + p {
-  font-family: rubik, sans-serif;
+  font-family: "Rubik", "Arial", sans-serif;
   font-weight: 700;
   line-height: 20px;
 }
@@ -159,14 +159,14 @@ a {
 }
 
 .contacts-title + p {
-  font-family: rubik, sans-serif;
+  font-family: "Rubik", "Arial", sans-serif;
   font-weight: 400;
   line-height: 30px;
   color: #444444;
 }
 
 .contacts-subtitle {
-  font-family: rubik, sans-serif;
+  font-family: "Rubik", "Arial", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -174,14 +174,14 @@ a {
 }
 
 .contacts-address-text {
-  font-family: rubik, sans-serif;
+  font-family: "Rubik", "Arial", sans-serif;
   font-weight: 400;
   line-height: 30px;
   color: #444444;
 }
 
 .contacts-phone {
-  font-family: rubik, sans-serif;
+  font-family: "Rubik", "Arial", sans-serif;
   font-weight: 400;
   line-height: 30px;
   color: #444444;
@@ -189,7 +189,7 @@ a {
 }
 
 .contacts-schedule-item {
-  font-family: rubik, sans-serif;
+  font-family: "Rubik", "Arial", sans-serif;
   font-weight: 400;
   line-height: 30px;
   color: #444444;
@@ -205,7 +205,7 @@ a {
 }
 
 .newsletter-title + p {
-  font-family: rubik, sans-serif;
+  font-family: "Rubik", "Arial", sans-serif;
   font-weight: 400;
   line-height: 30px;
   color: #444444;
@@ -216,7 +216,7 @@ footer {
 }
 
 .footer-contacts-address {
-  font-family: rubik, sans-serif;
+  font-family: "Rubik", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -229,7 +229,7 @@ footer {
 }
 
 .contacts-phone-footer {
-  font-family: rubik, sans-serif;
+  font-family: "Rubik", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -243,7 +243,7 @@ footer {
 }
 
 .breadcrumbs-link {
-  font-family: rubik, sans-serif;
+  font-family: "Rubik", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -261,35 +261,35 @@ footer {
 }
 
 .catalog-filter-title {
-  font-family: rubik, sans-serif;
+  font-family: "Rubik", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
 }
 
 .color-input {
-  font-family: rubik, sans-serif;
+  font-family: "Rubik", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
 }
 
 .status-input {
-  font-family: rubik, sans-serif;
+  font-family: "Rubik", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
 }
 
 .select-control {
-  font-family: rubik, sans-serif;
+  font-family: "Rubik", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
 }
 
 .product-img-title {
-  font-family: rubik, sans-serif;
+  font-family: "Rubik", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -297,14 +297,14 @@ footer {
 }
 
 .product-img-price {
-  font-family: rubik, sans-serif;
+  font-family: "Rubik", "Arial", sans-serif;
   font-weight: 400;
   color: #444444;
   text-align: right;
 }
 
 .pagination-link {
-  font-family: rubik, sans-serif;
+  font-family: "Rubik", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -319,7 +319,7 @@ footer {
 }
 
 .modal-content {
-  font-family: rubik, sans-serif;
+  font-family: "Rubik", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
