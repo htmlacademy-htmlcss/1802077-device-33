@@ -70,26 +70,26 @@ a {
   background-color: #ffe17f;
 }
 
-.head-container{
+ .head-container{
   display: flex;
   flex-direction: column;
   width: 1440px;
   margin: 0 auto;
 }
 
-.navigation-container{
-  width: 1040px;
-}
-
- .logo{
-  width: 145px;
-  margin: 0 895 150 0;
+ .navigation-container{
+  width: 1160px;
 }
 
  .page-header .navigation {
   display: flex;
   width: 1040px;
   margin: 0 auto;
+}
+
+ .logo{
+  width: 145px;
+  margin: 0;
 }
 
 .navigation-list {
@@ -124,15 +124,17 @@ a {
  .gallery{
   display: flex;
   justify-content: space-between;
-  padding: 0 189 0 140;
+  width: 1111px;
 }
 
 .image{
   width: 560px;
+  margin-right: 40px;
 }
 
  .description-image{
   width: 560px;
+  margin-right: -49px;
 }
 
  .description-image-title {
@@ -187,18 +189,30 @@ a {
 }
 
  .advantages {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
+  width: 1440px;
   padding: 0 140px;
   background-color: #f0f0f0;
 }
 
+.advantages-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1160px;
+  margin: 0 140;
+}
+
  .name-advantages-list{
   width: 280px;
+  margin-right: 123;
+  margin-top: 64px;
 }
 
  .description-advantages{
   width: 452px;
+  margin-right: 63px;
 }
 
  .name-services {
@@ -296,6 +310,8 @@ a {
 }
 
  .newsletter {
+  display: flex;
+  justify-content: space-between;
   background-color: #f0f0f0;
 }
 
@@ -304,7 +320,9 @@ a {
   line-height: 50px;
 }
 
- .newsletter-title + p {
+ .newsletter p {
+  width: 560px;
+  margin-right: 123px;
   font-family: "Rubik", "Arial", sans-serif;
   font-weight: 400;
   line-height: 30px;
@@ -317,6 +335,8 @@ a {
 
  .page-footer-container{
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   width: 1440px;
   margin: 0 auto;
 }
@@ -333,7 +353,7 @@ a {
   color: #ffffff;
 }
 
-   .footer-navigation{
+   .page-footer .navigation{
   width: 444px;
 }
 
@@ -343,13 +363,13 @@ a {
 }
 
  .contacts-phone-footer {
+  width: 174px;
   font-family: "Rubik", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
   text-decoration-line: underline;
-  width: 174px;
 }
 
  .footer-social{
