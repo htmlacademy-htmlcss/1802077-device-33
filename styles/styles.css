@@ -201,12 +201,12 @@ a {
   flex-direction: row;
   justify-content: space-between;
   width: 1160px;
-  margin: 0 140;
+  margin: 0 140px;
 }
 
  .name-advantages-list{
   width: 280px;
-  margin-right: 123;
+  margin-right: 123px;
   margin-top: 64px;
 }
 
