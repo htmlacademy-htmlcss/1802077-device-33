@@ -1,245 +1,254 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Девайс</title>
   <link rel="stylesheet" href="styles/styles.css">
 </head>
-
 <body>
-  <header class="page-header">
-    <h1 class="visually-hidden">Интернет-магазин гаджетов Device</h1>
-    <a href="index.html">
-      <img class="logo" src="images/logo/logo-page.svg" width="145" height="36" alt="Переход на главную.">
-    </a>
-    <form action="https://echo.htmlacademy.ru/" method="get">
-      <label class="visually-hidden" for="text-search-field">Поле ввода в поиск</label>
-      <input class="search" type="text" name="text-search" id="text-search-field" placeholder="Текст поиска">
-      <button type="submit">Найти</button>
-    </form>
-    <nav>
-      <ul class="navigation-user">
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Войти</a>
+<header class="page-header">
+  <h1 class="visually-hidden">Интернет-магазин гаджетов Device</h1>
+  <a href="index.html">
+    <img class="logo" src="images/logo/logo-page.svg" width="145" height="36" alt="Переход на главную.">
+  </a>
+  <nav class="navigation">
+    <div class="user-navigation-container">
+      <form class="search-form strange-class" action="https://echo.htmlacademy.ru/" method="get">
+        <label class="visually-hidden" for="text-search-field">Поле ввода в поиск</label>
+        <input type="text" name="text-search" id="text-search-field" placeholder="Текст поиска">
+        <button type="submit">Найти</button>
+      </form>
+      <ul class="user remove-dots strange-class">
+        <li class="item">
+          <a class="link" href="#">Войти</a>
         </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Сравнить</a>
+        <li class="item">
+          <a class="link" href="#">Сравнить</a>
         </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Корзина</a>
-        </li>
-      </ul>
-      <ul class="navigation-services">
-        <li class="navigation-item">
-          <a class="navigation-link" href="catalog.html">Каталог товаров</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Доставка</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Гарантия</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Контакты</a>
+        <li class="item">
+          <a class="link" href="#">Корзина</a>
         </li>
       </ul>
-    </nav>
-  </header>
-
-  <main class="page-main">
-    <section class="gallery">
-      <h2 class="visually-hidden">Галерея</h2>
-      <section class="image">
-        <h3 class="visually-hidden">Изображение</h3>
-        <img class="slider-image" src="images/gallery/quadrocopter.png" width="560" height="560"
-          alt="Изображение квадрокоптера.">
-        <button class="slider-button slider-prev" type="button">
-          <span class="visually-hidden">Предыдущее фото</span>
-        </button>
-        <button class="slider-button slider-next" type="button">
-          <span class="visually-hidden">Следующее фото</span>
-        </button>
-      </section>
-      <section class="description-image">
-        <h3 class="description-image-title">Порхает как бабочка,
-          жалит как пчела!</h3>
-        <p class="description-image-img">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
-          замаскированным под стандартную камеру.
-        </p>
-        <a class="button button-more-info" href="#">Подробнее</a>
-        <ul class="feature-list">
-          <li class="feature">
-            <span class="feature-value">800м</span>
-            <span class="feature-name">Дальность полёта</span>
-          </li>
-          <li class="feature">
-            <span class="feature-value">50м</span>
-            <span class="feature-name">Радиус поражения</span>
-          </li>
-        </ul>
-      </section>
+    </div>
+    <ul class="services remove-dots strange-class">
+      <li class="item">
+        <a class="link" href="catalog.html">Каталог товаров</a>
+      </li>
+      <li class="item">
+        <a class="link" href="#">Доставка</a>
+      </li>
+      <li class="item">
+        <a class="link" href="#">Гарантия</a>
+      </li>
+      <li class="item">
+        <a class="link" href="#">Контакты</a>
+      </li>
+    </ul>
+  </nav>
+  <section class="item-gallery">
+    <h2 class="visually-hidden">Галерея</h2>
+    <section class="item-slider">
+      <h3 class="visually-hidden">Изображение</h3>
+      <button class="prev" type="button">
+        <span class="visually-hidden">Предыдущее фото</span>
+      </button>
+      <img class="item-image" src="images/gallery/quadrocopter.png" width="560" height="560"
+           alt="Изображение квадрокоптера.">
+      <button class="next" type="button">
+        <span class="visually-hidden">Следующее фото</span>
+      </button>
     </section>
+    <section class="description-container">
+      <h3 class="title">Порхает как бабочка,
+        жалит как пчела!</h3>
+      <p class="description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+        замаскированным под стандартную камеру.
+      </p>
+      <a class="button more-info" href="#">Подробнее</a>
+      <ul class="features remove-dots">
+        <li class="feature">
+          <p class="value">800м</p>
+          <p class="name">Дальность полёта</p>
+        </li>
+        <li class="feature">
+          <p class="value">50м</p>
+          <p class="name">Радиус поражения</p>
+        </li>
+      </ul>
+    </section>
+  </section>
+</header>
+<main class="page-main">
+  <div class="main-container">
     <section class="catalog-categories">
       <h2 class="visually-hidden">Список категорий каталога</h2>
-      <ul class="catalog-categories-list">
-        <li class="catalog-categories-item">
-          <a class="catalog-categories-link" href="#">Виртуальная реальность</a>
+      <ul class="list remove-dots">
+        <li class="item">
+          <a class="link" href="#">Виртуальная реальность</a>
         </li>
-        <li class="catalog-categories-item">
-          <a class="catalog-categories-link" href="#">Моноподы для селфи</a>
+        <li class="item">
+          <a class="link" href="#">Моноподы для селфи</a>
         </li>
-        <li class="catalog-categories-item">
-          <a class="catalog-categories-link" href="#">Экшн-камеры</a>
+        <li class="item">
+          <a class="link" href="#">Экшн-камеры</a>
         </li>
-        <li class="catalog-categories-item">
-          <a class="catalog-categories-link" href="#">Фитнес-браслеты</a>
+        <li class="item">
+          <a class="link" href="#">Фитнес-браслеты</a>
         </li>
-        <li class="catalog-categories-item">
-          <a class="catalog-categories-link" href="#">Умные часы</a>
+        <li class="item">
+          <a class="link" href="#">Умные часы</a>
         </li>
-        <li class="catalog-categories-item">
-          <a class="catalog-categories-link" href="#">Квадрокоптеры</a>
+        <li class="item">
+          <a class="link" href="#">Квадрокоптеры</a>
         </li>
       </ul>
     </section>
+  </div>
+  <div class="advantages-container">
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
-      <section class="name-advantages">
+      <section class="names-container">
         <h3 class="visually-hidden">Название Преимущества</h3>
-        <ul class="name-advantages-list">
-          <li class="name-advantages-item">
-            <a class="button name-advantages-title" href="#">Доставка</a>
+        <ul class="list remove-dots">
+          <li class="item">
+            <a class="name button" href="#">Доставка</a>
           </li>
-          <li class="name-advantages-item">
-            <a class="button name-advantages-title" href="#">Гарантия</a>
+          <li class="item">
+            <a class="name button" href="#">Гарантия</a>
           </li>
-          <li class="name-advantages-item">
-            <a class="button name-advantages-title" href="#">Кредит
+          <li class="item">
+            <a class="name button" href="#">Кредит
+            </a>
+        </ul>
+      </section>
+      <section class="description-container">
+        <h3 class="advantage-name">Доставка</h3>
+        <p class="description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+          совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+      </section>
+    </section>
+  </div>
+  <div class="main-container">
+    <p class="delivery-rare">Доставим редкий товар под заказ</p>
+    <section class="about-us-contacts-container">
+      <h2 class="visually-hidden">Информация о нас</h2>
+      <section class="about-us">
+        <h3 class="title">О нас</h3>
+        <p class="content"> Огромный выбор гаджетов не оставит равнодушным гика,
+          который есть в каждом из
+          нас.
+        </p>
+        <p class="content"> Мы можем доставить ваш товар в самые отдалённые уголки России транспортными
+          компаниями:</p>
+        <ul class="company-list remove-dots">
+          <li class="item">
+            <p>Меловые линии</p>
+          </li>
+          <li class="item">
+            <p>Сдик</p>
+          </li>
+          <li class="item">
+            <p>ТоксБерри</p>
+          </li>
+        </ul>
+        <a class="button" href="#">Подробнее о нас</a>
+      </section>
+      <section class="contacts">
+        <h3 class="title">Контакты</h3>
+        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки.</p>
+        <h4 class="subtitle">Интернет-магазин «Девайс»</h4>
+        <address class="address-phone-container">
+          <p class="address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          <a class="phone" href="tel:88128121212">+7 (812) 812-12-12</a>
+        </address>
+        <h4 class="subtitle">Время работы</h4>
+        <ul class="schedule remove-dots">
+          <li class="item">пн—пт: с 10:00 до 22:00 сб—вс: с 10:00 до 19:00</li>
+        </ul>
+        <a class="button feedback" href="#">Напишите нам</a>
+      </section>
+    </section>
+  </div>
+  <section class="newsletter">
+    <div class="newsletter-container">
+      <h3 class="title">Подпишитесь на рассылку</h3>
+      <p>Еженедельный дайджест с обзорами новинок,
+        длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+      <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+        <label class="visually-hidden" for="e-mail-newsletter-field">Поле ввода e-mail </label>
+        <input type="email" name="e-mail-newsletter" id="e-mail-newsletter-field" placeholder="Ваш e-mail" required>
+        <button class="button" type="submit">Подписаться</button>
+      </form>
+    </div>
+  </section>
+</main>
+<footer class="page-footer">
+  <div class="footer-container">
+    <section class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <a href="index.html">
+        <img class="logo" src="images/logo/logo-footer.svg" width="145" height="36" alt="Device.">
+      </a>
+      <address class="address">
+        <p class="address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+      </address>
+    </section>
+    <div class="service-social">
+      <nav class="navigation">
+        <ul class="service remove-dots">
+          <li class="item">
+            <a class="link" href="#">Доставка</a>
+          </li>
+          <li class="item">
+            <a class="link" href="#">Гарантия</a>
+          </li>
+          <li class="item">
+            <a class="link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="social">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul class="list remove-dots">
+          <li class="item">
+            <a class="button" href="#">
+              <span class="visually">Фэйсбук</span>
+            </a>
+          </li>
+          <li class="item">
+            <a class="button" href="#">
+              <span class="visually">Инстаграм</span>
+            </a>
+          </li>
+          <li class="item">
+            <a class="button" href="#">
+              <span class="visually">Твиттер</span>
             </a>
           </li>
         </ul>
       </section>
-      <section class="description-advantages">
-        <h3 class="name-services">Доставка</h3>
-        <p class="description-advantages-services">Мы с удовольствием доставим ваш товар прямо к вашему подъезду
-          совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-      </section>
-    </section>
-    <p class="delivery-rare">Доставим редкий товар под заказ</p>
-    <section class="information-about-us">
-      <h2 class="visually-hidden">Информация о нас</h2>
-      <section class="about-us">
-        <h3 class="about-us-title">О нас</h3>
-        <p class="about-us-content"> Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
-        </p>
-        <p class="about-us-content"> Мы можем доставить ваш товар в самые отдалённые уголки России транспортными
-          компаниями:</p>
-        <ul class="about-us-list">
-          <li class="about-us-company-name-item">
-            <p>Меловые линии</p>
-          </li>
-          <li class="about-us-company-name-item">
-            <p>Сдик</p>
-          </li>
-          <li class="about-us-company-name-item">
-            <p>ТоксБерри</p>
-          </li>
-        </ul>
-        <a class="button button-about-us" href="#">Подробнее о нас</a>
-      </section>
-      <section class="contacts">
-        <h3 class="contacts-title">Контакты</h3>
-        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки.</p>
-        <h4 class="contacts-subtitle">Интернет-магазин «Девайс»</h4>
-        <address class="contacts-address">
-          <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-          <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
-        </address>
-        <h4 class="contacts-subtitle">Время работы</h4>
-        <ul class="contacts-schedule">
-          <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
-          <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
-        </ul>
-        <a class="button button-feedbacks" href="#">Напишите нам</a>
-      </section>
-    </section>
-    <section class="newsletter">
-      <h3 class="newsletter-title">Подпишитесь на рассылку</h3>
-      <p>Еженедельный дайджест с обзорами новинок,
-        длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
-      <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label for="newsletter-email">Ваш e-mail</label>
-        <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email"
-          required>
-        <button class="button newsletter-button" type="submit">Подписаться</button>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <section class="footer-contacts">
-      <h2 class="visually-hidden">Контакты</h2>
-      <img class="footer-contacts-logo" src="images/logo/logo-footer.svg" width="145" height="36" alt="Device.">
-      <address class="footer-contacts-address">
-        <p class="address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-      </address>
-      <nav class="navigation">
-        <ul class="navigation-user">
-          <li class="navigation-item">
-            <a class="navigation-link-footer" href="#">Доставка</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link-footer" href="#">Гарантия</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link-footer" href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <a class="contacts-phone-footer" href="tel:88128121212">+7 (812) 812-12-12</a>
-    </section>
-    <section class="footer-social">
-      <h2 class="visually-hidden">Социальные сети</h2>
-      <ul class="footer-social-list">
-        <li class="footer-social-item">
-          <a class="button" href="#">
-            <span class="visually-hidden">Фэйсбук</span>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="button" href="#">
-            <span class="visually-hidden">Инстаграм</span>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="button" href="#">
-            <span class="visually-hidden">Твиттер</span>
-          </a>
-        </li>
-      </ul>
-      <p class="about-text">
-        <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
-      </p>
-    </section>
-  </footer>
-
-  <section class="modal-content">
-    <h2 class="content-title">Доставка под заказ</h2>
-    <form action="https://echo.htmlacademy.ru/" method="get">
-      <label for="user-field">Ваше имя:</label>
-      <input id="user-field" type="email" name="username">
-      <label for="email-field">Ваш e-mail:</label>
-      <input id="email-field" type="email" name="email">
-      <label for="item-field">Что нужно привезти:</label>
-      <input id="item-field" type="email" name="item">
-      <label for="quantity-field">Количество</label>
-      <button type="button">-</button>
-      <input id="quantity-field" type="email" name="quantity">
-      <button type="button">+</button>
-      <button type="submit">Отправить</button>
-    </form>
-  </section>
+    </div>
+    <p class="phone-designed-by">
+      <a class="phone" href="tel:88128121212">+7 (812) 812-12-12</a>
+      <a class="link" href="https://htmlacademy.ru/">.html academy</a>
+    </p>
+  </div>
+</footer>
+<section class="modal-content">
+  <h2 class="content-title">Доставка под заказ</h2>
+  <form class="modal-container" action="https://echo.htmlacademy.ru/" method="get">
+    <label for="user-field">Ваше имя:</label>
+    <input id="user-field" type="email" name="username">
+    <label for="email-field">Ваш e-mail:</label>
+    <input id="email-field" type="email" name="email">
+    <label for="item-field">Что нужно привезти:</label>
+    <input id="item-field" type="email" name="item">
+    <label for="quantity-field">Количество</label>
+    <button type="button">-</button>
+    <input id="quantity-field" type="email" name="quantity">
+    <button type="button">+</button>
+    <button type="submit">Отправить</button>
+  </form>
+</section>
 </body>
-
 </html>
